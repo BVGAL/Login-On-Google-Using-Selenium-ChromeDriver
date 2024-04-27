@@ -5,3 +5,4 @@ This code is for informational purposes only, as web scraping may violate the te
 SUGGESTION
 It is recommended to implement an active change of UserAgent parameters, and change the UserAgent String every few uses, as automated activities coming from the same UserAgent may raise some red flags and result in an account ban.
 It is also advisable, once you're logged-in, to implement random waits and clicks in the code to simulate human interaction as much as possible and thus avoid being banned.
+If you know that the website you're trying to login uses an anti-bot detector such as FingerprintJS or Imperva, it is reccomended to change also the JS signature inside ChromeDriver, wich is stored in a 'cdc' variable (es: rename 'cdc' with 'xyz')
