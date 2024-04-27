@@ -18,8 +18,7 @@ public class Test{
       public static void openWebPage() {
 
             WebDriver driver;
-            // Optional: If you have VPN
-            final String PROXY = "Your_Proxy_Server_IP" + ":" + "Port_Number";
+            final String PROXY = "Your_Proxy_Server_IP" + ":" + "Port_Number";      // Optional: If you have VPN
 
             try {                       
       
