@@ -18,10 +18,10 @@ public class Test{
       public static void openWebPage() {
 
             WebDriver driver;
+            // Optional: If you have VPN
+            final String PROXY = "Your_Proxy_Server_IP" + ":" + "Port_Number";
 
-            try {      
-                  // Optional: If you have VPN
-                  final String PROXY = "Your_Proxy_Server_IP" + ":" + "Port_Number";
+            try {                       
       
                   // Initialize a list with 2 USER-AGENTs, but you can add more:
                   List<String> useragentArray = new ArrayList<String>();
