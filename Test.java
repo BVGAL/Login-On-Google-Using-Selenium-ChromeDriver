@@ -30,19 +30,10 @@ public class Main {
 			// Choose a random user agent from the list
 			Random rand = new Random();
 			int index = rand.nextInt(useragentArray.size());
-			String randomUserAgent = useragentArray.get(index);
+			String randomUserAgent = useragentArray.get(index);			
 
 			// Set the user agent
 			options.addArguments("--user-agent=" + randomUserAgent);
-
-			// Optional: Validate only if you use a VPN and configured before the Proxy Server
-			options.addArguments("--proxy-server=" + proxy);
-
-			// Optional: Disable browser notifications
-			options.addArguments("--disable-notifications"); // If you don't see certain buttons during navigation on the website, cancel this option
-
-			// Optional: Open the window maximized
-			options.addArguments("start-maximized");
 
 			// Add argument to disable the AutomationControlled flag
 			options.addArguments("--disable-blink-features=AutomationControlled");
@@ -52,6 +43,15 @@ public class Main {
 
 			// Turn-off userAutomationExtension
 			options.setExperimentalOption("useAutomationExtension", false);
+
+			// Optional: Validate only if you use a VPN and configured before the Proxy Server, otherwise cancel this line
+			options.addArguments("--proxy-server=" + proxy);
+
+			// Optional: Disable browser notifications
+			options.addArguments("--disable-notifications"); // If you don't see certain buttons during navigation on the website, cancel this option
+
+			// Optional: Open the window maximized
+			options.addArguments("start-maximized");
 
 			// Automatic Install the ChromeDriver version that matches your Google Chrome version
 			WebDriverManager.chromedriver().setup(); // Use WebDriverManager to manage Chromedriver
