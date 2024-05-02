@@ -1,8 +1,5 @@
 DISCLAIMER
-With this code, it's possible to bypass the checks of some websites that prevent web scraping or crawling programs from interacting with login-required websites.
-This code is for informational purposes only, as web scraping may violate the terms of service of the website from which you are attempting to retrieve information.
+This code allows you to bypass the "Login Failed, this browser may not be secure..." disclaimer when attempting to log in to a website with a Google profile.
+However, it's important to note that using this code alone doesn't make you completely undetectable to anti-bot systems. Automatic activities may still result in your account being banned.
 
-SUGGESTION
-It is recommended to implement an active change of UserAgent parameters, and change the UserAgent String every few uses, as automated activities coming from the same UserAgent may raise some red flags and result in an account ban.
-It is also advisable, once you're logged-in, to implement random waits and clicks in the code to simulate human interaction as much as possible and thus avoid being banned.
-If you know that the website you're trying to login uses an anti-bot detector such as FingerprintJS or Imperva, it is reccomended to change also the JS signature inside ChromeDriver, wich is stored in a 'cdc' variable (es: rename 'cdc' with 'xyz')
+
