@@ -17,7 +17,7 @@ public class Main {
 		WebDriver driver;
 		final String proxy = "Your_Proxy_Server_IP" + ":" + "Port_Number"; // Optional: If you have VPN
 
-		try {
+		
 
 			// Create a ChromeOptions instance
 			ChromeOptions options = new ChromeOptions();
@@ -53,6 +53,7 @@ public class Main {
 			// Optional: Open the window maximized
 			options.addArguments("start-maximized");
 
+		try {
 			// Automatic Install the ChromeDriver version that matches your Google Chrome version
 			WebDriverManager.chromedriver().setup(); // Use WebDriverManager to manage Chromedriver
 
